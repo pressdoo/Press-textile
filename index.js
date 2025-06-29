@@ -1,9 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
 
-const express = require('express');
-const app = express();
-const PORT = process.env.PORT || 5000;
-app.use(express.json());
-app.get('/', (req, res) => {
-  res.send('Press Textile API running');
-});
-app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
